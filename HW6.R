@@ -132,7 +132,7 @@ HW6d <- function() {
   loc.mu <- (m + M*Tt*mu.hat) / (M*Tt + 1)
   scale.mu <- (M * sigmasq.m) / (M*Tt + 1)
   
-  mu.m <- rnorm(length(sigma.m), loc.mu, sqrt(scale.mu))
+  mu.m <- rnorm(length(sigmasq.m), loc.mu, sqrt(scale.mu))
   
   ## we return 1 simulation of y_t for each T in 10:111
   rnorm(length(mu.m), mu.m, sqrt(sigmasq.m))
