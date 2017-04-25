@@ -14,8 +14,6 @@ for (i in 10:111) {
 }
 all.equal(sd.test, sigma.hat)
 
-
-
 HW6b <- function() {
   mu <- .1
   sigma <- .2
